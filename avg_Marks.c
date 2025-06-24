@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int m[5],i,s=0,avg;
+    for(i=0;i<5;i++)
+    {
+        printf("\n enter the marks of %d students",i+1);
+        scanf("%d",&m[i]);
+        s=s+m[i];
+
+    }
+    avg=s/5;
+    printf("\n the avg marks of student =%d",avg);
+    return 0;
+}
