@@ -2,137 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yuvraj's C Programs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuvraj's C Programming Hub</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
     }
 
     header {
-      background: #004080;
+      background-color: #007acc;
       color: white;
-      padding: 1rem 2rem;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .button-container {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
       flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin: 30px 0;
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    nav {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    nav a {
+    .explore-button {
+      padding: 12px 24px;
+      background-color: #007acc;
       color: white;
       text-decoration: none;
-      font-weight: 500;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
 
-    .search-bar {
-      margin: 2rem auto;
-      max-width: 600px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .search-bar input {
-      width: 100%;
-      padding: 0.75rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px 0 0 4px;
-    }
-
-    .search-bar button {
-      padding: 0.75rem 1rem;
-      background: #004080;
-      color: white;
-      border: none;
-      border-radius: 0 4px 4px 0;
-      cursor: pointer;
-    }
-
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 1rem;
-      }
-
-      .search-bar {
-        flex-direction: column;
-        padding: 0 1rem;
-      }
-
-      .search-bar input,
-      .search-bar button {
-        width: 100%;
-        border-radius: 4px;
-        margin: 0.25rem 0;
-      }
+    .explore-button:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">🖥️ Yuvraj C Programs</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">All Programs</a>
-      <a href="#">Categories</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>Welcome to Yuvraj's C Programming Hub</h1>
+    <p>Explore and learn C programs by category</p>
   </header>
 
-  <div class="search-bar">
-    <input type="text" placeholder="Search C programs...">
-    <button>Search</button>
+  <div class="button-container">
+    <a href="programs/arrays.html" class="explore-button">Arrays</a>
+    <a href="programs/loops.html" class="explore-button">Loops</a>
+    <a href="programs/strings.html" class="explore-button">Strings</a>
+    <a href="programs/pointers.html" class="explore-button">Pointers</a>
   </div>
-
-  <main>
-    <h1>Welcome to Yuvraj's C Programming Hub</h1>
-    <p>Explore hundreds of C programs with explanations and source code.</p>
-  </main>
-
-  <footer>
-    <p>© 2025 Yuvraj. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
